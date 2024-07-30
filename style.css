@@ -1,0 +1,529 @@
+:root
+{
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+    --Green: hsl(75, 94%, 57%);
+    --lightGreen: hsl(75, 71%, 89%);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.head
+{
+    display: flex;
+    justify-content: space-between;
+    padding: .5em;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    z-index: 1000;
+
+}
+header
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+main
+{
+    margin-top: 4.2em;
+    z-index:0 !important;  
+}
+
+header h1
+{
+    font-size: 1.6em;
+    font-weight: 800;
+}
+
+.navbar
+{
+    display: flex;
+    column-gap: 20px;
+    margin: 0 2em;
+
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 600;
+}
+.navbar a:hover{
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.411);
+}
+.navbar i
+{cursor: pointer;}
+
+.menu
+{
+    display: none;
+}
+.side-navbar
+{
+    margin: 0;
+    width:50vw;
+    height: 100vh;
+    background-color: black;
+    top:0px;
+    position: fixed;
+    padding: 1.5em;
+    left: -500px;
+transition: 2s;
+
+}
+.side-navbar a{
+    text-decoration: none;
+    color: white;
+
+}
+.side-navbar a:hover
+{
+    text-decoration:underline;
+    color: rgba(255, 255, 255, 0.541);
+}
+
+.side-navbar p
+{
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+.cancel{
+    text-align: right;
+}
+.cancel i
+{
+    color: white;
+    cursor: pointer;
+}
+.home
+{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin: 1.5em 1em;
+    width:auto;
+    margin: 2em;
+    gap:1em;
+}
+.section1img img{
+    text-align: left;
+    width: 350px;
+    height: 500px;
+    padding: .5em;
+    border-radius: 20px;
+}
+.section1
+{
+    padding: .5em;
+}
+.section1 h1, .section1 p{
+ margin-bottom: .5vh;
+}
+
+.section1 h1
+{
+    font-size: 2.5em;
+    font-weight: bolder;
+    margin-left:2rem;
+}
+.section1 p
+{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left:2rem;
+
+}
+.section1 button
+{
+    width:auto;
+    font-size: 1rem;
+    padding: .7em 1.2em ;
+    border-radius: 10px;
+    background-color: black;
+    margin:1.5em  1rem 1.5em 2rem;
+    font-weight: 600;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+    border:2px solid black;
+
+}
+.section1 button:hover
+{
+    background-color: white;
+    color:black;
+    border:2px solid black;
+}
+
+.service
+{
+    padding: 1em;
+}
+.service-h2
+{
+    text-align: center;
+    margin: 2em .8em 1em;
+    font-size: 2em;
+    padding: .2em;
+}
+.secvice-container1
+{
+    display: flex;
+    justify-content: space-between;
+  
+
+}
+.secvice-container2
+{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    gap: 10px;
+
+}
+.secvice-container2 div
+{
+    background-color: #f2f4f7;
+    border-radius: 10px;
+    padding: 1em;
+}
+.new-arrival img
+{
+    width:230px;
+    height: 350px;
+
+
+}
+.new-arrival
+{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 2em;
+    gap:1.5em;
+
+}
+.new-arrival-container
+{
+   flex-basis: 20%;
+
+}
+.new-arrival button
+{
+    padding: .5em;
+    position: absolute;
+    margin-left:  -160px;
+    margin-top: 270px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-arrival button:hover
+{
+    opacity: .6;
+
+}
+.newsletter
+{
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+}
+.newsletter button{
+    padding: .5em 1em;
+width:auto;
+font-size: 1rem;
+border-radius: 10px;
+background-color: black;
+margin:1.5em  1rem 1.5em 2rem;
+font-weight: 400;
+color: white;
+box-sizing: border-box;
+cursor: pointer;
+border:2px solid black;
+
+}
+.newsletter button:hover
+{
+background-color: white;
+color:black;
+border:2px solid black;
+font-weight: 600;
+
+}
+.newsletter h1,p{
+    margin-bottom: .5em;
+}
+
+.search
+{
+    border: 1.5px solid black;
+    width:75%;
+    height: 2.5em;
+    margin: .8em 0 1em ;
+    border-radius: 5px;
+}
+footer
+{
+    background-color: rgba(0, 0, 0, 0.905);
+    color: white;
+    padding: 1em;
+    margin-bottom: 0;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+.sociallinks
+{
+    display: flex;
+    align-items: center;
+}
+.sociallinks i,.sociallinks a
+{
+    padding-right: .3em;
+    font-size: 1.2em ;
+}
+
+/* Collectin pade css */
+.search-collections
+{
+    border: 1.5px solid black;
+    width:75%;
+    border-radius: 50px;
+    height: 2.5em;
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .2em 2em .2em 1em;
+}
+.search-collections:hover
+{
+    border: 2px solid black;
+}
+#searchbox
+{
+margin: .5em 1em;
+padding: .2em;
+border: none;
+height: 100%;
+flex:2;
+font-size: 1em;
+}
+#searchbox:focus
+{
+outline: none;  
+}
+.products
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    /* padding: 2em;
+    gap: 2em; */
+    /* margin: auto; */
+    /* padding: 2em 5em 2.5em  4em; */
+}
+.product-box{
+    flex-basis: 20%;
+padding:.5em;
+margin: 1em 1.5em;
+}
+.product-box img{
+    border-radius: 20px;
+}
+.product-box h3{
+text-align: center;
+}
+.products button
+{
+    padding: .5em;
+    position: absolute;
+    margin-left:  -160px;
+    margin-top: 230px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.products button:hover
+{
+    opacity: .6;
+
+}
+
+
+/* Contact page css */
+.contact
+{
+    background-color: rgba(0, 0, 0, 0.842);
+    width: 60vw;
+    height: auto;
+    color: rgba(255, 255, 255, 0.801);
+    padding: 2.5em 3em;
+    margin: 20vh auto 15vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.contact h3{
+    color: white;
+    margin: 1.5em 0 1em;
+    font-size: 1.5em;
+    /* padding: .5em; */
+}
+.contact label
+{
+    font-size: 1em;
+    margin-bottom: .5em;
+}
+#name,#email
+{
+    height: 3.5em;
+    border: none;
+    border-radius: 5px;
+    padding: 1em;
+    font-size: 1em;
+    margin-bottom: 1.5em;
+
+}
+#message
+{
+    border: none;
+    border-radius: 5px;
+    height: 5em;  
+    padding: 1em;
+    line-height: normal;
+    font-size: 16px;
+    margin-bottom: 1.5em;
+}
+#name:focus, #email:focus, #message:focus
+{
+outline: none;
+border: 2.5px solid rgb(3, 1, 27);
+opacity:.9;
+}
+#btn
+{
+    width:10em;
+    font-size: 1rem;
+    padding: .7em 1.2em ;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    border:none;
+margin:2em auto;
+}
+#btn:hover
+{
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+border: 1px solid white;
+}
+
+/* media querry */
+@media screen and (max-width:640px) {
+    .products
+{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.new-arrival
+{
+    justify-content:center;
+    margin: auto;
+
+}
+
+}
+@media screen and (max-width:750px) {
+    .menu
+
+{
+    display: block;
+}
+.navbar a{
+display: none;
+}
+.section1img {
+   display: none;
+}
+.section1
+{
+    flex-basis: 100%;
+width:100%;
+height: 100%;
+margin: 0;
+}
+.home{
+    margin: .5em;
+}
+.secvice-container1
+{
+    display: none;
+}
+.secvice-container2
+{
+flex-direction: column;
+}
+.contact
+{
+    width: 75vw;
+}
+#name,#email
+{
+    height: 2em;  
+
+}
+#message
+{
+    height: 3em; 
+    color: rgb(0, 0, 0); 
+}
+#btn
+{
+    width:auto;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    border:none;
+    padding: .6em .5em ;
+margin:2em auto;
+}
+
+}
+
+
+
+@media (min-width:751px)  {
+
+.side-navbar
+{
+display: none !important;
+transition: none;
+}
+
+}
